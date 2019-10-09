@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+}
+html, body, #root {
+    min-height: 100%;
+}
+
+body, button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #000 url('../img/background.png') no-repeat;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.header{
+    border-bottom: 2px solid #666;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.titulo{
+    letter-spacing: 5px;
+    margin-top: 30px;
+    font-size: 100px;
+    font-weight: 800;
+    color: yellow;
+    border: 10px solid black;
+}
+
+.info{
+    background: rgb(226, 226, 226);
+    margin: 40px auto 0;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.content{
+    max-width: 400px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.footer{
+    padding-top: 20px; 
+    text-align: center;
+}
+
+.button{
+    border: 0;
+    border-radius: 5px;
+    height: 42px;
+    margin-top: 30px; 
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: black;
+    color: yellow;
+    cursor: pointer;
+    border: 1.5px solid yellow;
+}
+
+.loading{
+    text-align: center;
+}
