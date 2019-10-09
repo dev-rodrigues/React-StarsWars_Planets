@@ -31,7 +31,7 @@ export default function Planet(){
 
         ultimoNumero = numeroDoPlaneta;
     }
-    
+
     function handleClick(){
 
         setLoading(true);

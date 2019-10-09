@@ -60,11 +60,11 @@ body {
 
 .content{
     max-width: 400px;
-    padding: 10px;
+    padding: 20px 10px 5px 10px;
     font-size: 18px;
 }
 
-.footer{
+.feature{
     padding-top: 20px; 
     text-align: center;
 }
@@ -86,7 +86,6 @@ body {
 .loading{
     text-align: center;
 }
-
 
 @media (max-width: 450px){
     .titulo{
