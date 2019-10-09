@@ -11,9 +11,10 @@ import Button from './Button';
 
 export default function Planet(){
 
+    const [ filmes, setFilmes ] = useState([]);
     const [ loading, setLoading ] = useState(false);  
     const [ planet, setPlanet ] = useState({});
-    const { name, population, climate, terrain, films } = planet;
+    const { name, population, climate, terrain } = planet;
 
     let numeroDoPlaneta = 0;
     let ultimoNumero = 0;
@@ -41,6 +42,11 @@ export default function Planet(){
         async function getPlanet(){
             let response = await api.get(`/planets/${numeroDoPlaneta}`);
             setPlanet(response.data);
+            
+            if(response.data.films){
+                let quantidadeFilmes = response.data.films.map(item => item);
+                setFilmes(quantidadeFilmes);
+            }
         }
         
         getPlanet();
@@ -68,7 +74,7 @@ export default function Planet(){
                         < Content dado={"Population"} valor={population} />
                         < Content dado={"Climate"} valor={climate} />
                         < Content dado={"Terrain"} valor={terrain} />
-                        < Feature dado={"Feature in"} valor={films} />
+                        < Feature dado={"Feature in"} valor={filmes} />
                     </>
                 )}
             </div>

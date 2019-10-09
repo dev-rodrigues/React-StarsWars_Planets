@@ -83,6 +83,10 @@ body {
     border: 1.5px solid yellow;
 }
 
+.button:hover{
+    transform: scale(1.2);
+}
+
 .loading{
     text-align: center;
 }
