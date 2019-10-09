@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import api from '../service/api';
 import { LineScale } from 'react-pure-loaders';
+import api from '../service/api';
 import '../styles/Planet.css'
 
 import Header from './Header';

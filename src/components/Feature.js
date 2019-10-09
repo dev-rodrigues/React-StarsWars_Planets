@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/Planet.css';
 
-export default function Footer(props) {
+export default function Feature(props) {
   let vetor = [];
   if(props.valor){
       props.valor.map(item => vetor.push(item))
