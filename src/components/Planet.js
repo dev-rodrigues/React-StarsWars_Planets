@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import api from '../service/api';
-import { BallBeat } from 'react-pure-loaders';
+import { LineScale } from 'react-pure-loaders';
 import '../styles/Planet.css'
 
 import Header from './Header';
 import Content from './Content';
-import Button from './Button';
 import Feature from './Feature';
+import Button from './Button';
 
 
 export default function Planet(){
@@ -42,6 +42,7 @@ export default function Planet(){
             let response = await api.get(`/planets/${numeroDoPlaneta}`);
             setPlanet(response.data);
         }
+        
         getPlanet();
     }
 
@@ -51,20 +52,19 @@ export default function Planet(){
 
     return (
         <div className="container">
-        <h1 className="titulo">PLANETS</h1>
+            <h1 className="titulo">planets</h1>
             <div className="info">
                 {loading && (
                     <div className="loading">
-                        <BallBeat
+                        <LineScale
                             color={'black'}
                             loading={loading}
-                            textAlign={'center'}
                         />
                     </div>
                 )}
                 {!loading &&(
                     <>
-                        < Header valor={name} />
+                        < Header dado={"Planet name"} valor={name} />
                         < Content dado={"Population"} valor={population} />
                         < Content dado={"Climate"} valor={climate} />
                         < Content dado={"Terrain"} valor={terrain} />

@@ -5,8 +5,8 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-
 }
+
 html, body, #root {
     min-height: 100%;
 }
@@ -37,8 +37,9 @@ body {
 }
 
 .titulo{
-    letter-spacing: 5px;
     margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
     font-size: 100px;
     font-weight: 800;
     color: yellow;
@@ -48,13 +49,13 @@ body {
 .info{
     background: rgb(226, 226, 226);
     margin: 40px auto 0;
+    padding: 20px 0;
     max-width: 350px;
     width: 100%;
     display: flex;
     flex-direction: column;
     border: 2px solid yellow;
     border-radius: 10px;
-    padding: 20px 0;
 }
 
 .content{

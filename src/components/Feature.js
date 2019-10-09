@@ -9,7 +9,7 @@ export default function Footer(props) {
 
   return (
     <>
-      <p className="footer">{props.dado}: {vetor.length} films</p>
+      <p className="footer">{props.dado} {vetor.length} {vetor.length === 1 ? 'film' : 'films'}</p>
     </>
   );
 }
