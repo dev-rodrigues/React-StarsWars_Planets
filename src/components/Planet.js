@@ -78,7 +78,7 @@ export default function Planet(){
                     </>
                 )}
             </div>
-            < Button onClick={handleClick} />
+            < Button onClick={handleClick} hidden={loading} />
         </div>
     );
 }

@@ -12,3 +12,6 @@ Gabriel de Lima Couto
 
 ## GitHub:
 https://github.com/gabrielCouto26/React-StarsWars_Planets
+
+## URL
+https://app-sw-planets.herokuapp.com
