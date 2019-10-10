@@ -79,7 +79,7 @@ export default function Planet(){
                     </>
                 )}
             </div>
-            < Button onClick={handleClick} hidden={loading} />
+            < Button onClick={handleClick} valor={planet} hidden={loading} />
         </div>
     );
 }
