@@ -58,6 +58,7 @@ export default function Planet(){
 
     return (
         <div className="container">
+            <h3 className="sub-titulo">Star Wars</h3>
             <h1 className="titulo">planets</h1>
             <div className="info">
                 {loading && (

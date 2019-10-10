@@ -37,13 +37,19 @@ body {
 }
 
 .titulo{
-    margin-top: 30px;
+    margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 7em;
     font-weight: 800;
     color: yellow;
-    border: 10px solid black;
+}
+
+.sub-titulo{
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: yellow;
 }
 
 .info{
@@ -91,7 +97,7 @@ body {
     text-align: center;
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px){
     .titulo{
         font-size: 4em;
     }
