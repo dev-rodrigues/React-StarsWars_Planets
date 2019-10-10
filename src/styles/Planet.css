@@ -79,7 +79,8 @@ body {
     border: 0;
     border-radius: 5px;
     height: 42px;
-    margin-top: 30px; 
+    margin-top: 30px;
+    margin-bottom: 10px; 
     padding: 0 20px;
     font-size: 18px;
     font-weight: bold;
@@ -97,7 +98,7 @@ body {
     text-align: center;
 }
 
-@media (max-width: 500px){
+@media (max-width: 450px){
     .titulo{
         font-size: 4em;
     }
