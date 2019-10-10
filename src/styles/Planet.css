@@ -91,14 +91,16 @@ body {
 }
 
 .button:hover{
-    transform: scale(1.2);
+    background: yellow;
+    color: black;
 }
+
 
 .loading{
     text-align: center;
 }
 
-@media (max-width: 450px){
+@media (max-width: 550px){
     .titulo{
         font-size: 4em;
     }
