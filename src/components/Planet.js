@@ -5,7 +5,7 @@ import '../styles/Planet.css'
 
 import Header from './Header';
 import Content from './Content';
-import Feature from './Feature';
+import Footer from './Footer';
 import Button from './Button';
 
 
@@ -75,7 +75,7 @@ export default function Planet(){
                         < Content dado={"Population"} valor={population} />
                         < Content dado={"Climate"} valor={climate} />
                         < Content dado={"Terrain"} valor={terrain} />
-                        < Feature dado={"Feature in"} valor={filmes} />
+                        < Footer dado={"Feature in"} valor={filmes} />
                     </>
                 )}
             </div>
