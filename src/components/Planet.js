@@ -19,12 +19,12 @@ export default function Planet(){
     let numeroDoPlaneta = 0;
     let ultimoNumero = 0;
 
-    let geraNumero = () => Math.floor(Math.random() * 61);
+    let geraNumero = () => Math.floor(Math.random() * 61 + 1);
     
     function verificaNumero(){
         let novoNumero = geraNumero();
     
-        if(novoNumero !== ultimoNumero && novoNumero !== 0){
+        if(novoNumero !== ultimoNumero){
             numeroDoPlaneta = novoNumero;
         } else {
             numeroDoPlaneta = geraNumero();
