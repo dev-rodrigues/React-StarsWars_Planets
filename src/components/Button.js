@@ -7,7 +7,7 @@ export default function Button(props) {
       <button className="button" onClick={props.onClick} 
         style={props.hidden ? {display: 'none'} : {display: 'block'}}
         >
-        Next
+        {props.valor.name ? 'Next' : 'Get'}
         </button>
     </>
   );

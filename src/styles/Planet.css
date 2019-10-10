@@ -48,7 +48,7 @@ body {
 .sub-titulo{
     margin-top: 10px;
     letter-spacing: 3px;
-    font-size: 2em;
+    font-size: 3em;
     color: yellow;
 }
 
@@ -70,7 +70,7 @@ body {
     font-size: 18px;
 }
 
-.feature{
+.footer{
     padding-top: 20px; 
     text-align: center;
 }
@@ -91,14 +91,16 @@ body {
 }
 
 .button:hover{
-    transform: scale(1.2);
+    background: yellow;
+    color: black;
 }
+
 
 .loading{
     text-align: center;
 }
 
-@media (max-width: 450px){
+@media (max-width: 550px){
     .titulo{
         font-size: 4em;
     }

@@ -5,7 +5,7 @@ import '../styles/Planet.css'
 
 import Header from './Header';
 import Content from './Content';
-import Feature from './Feature';
+import Footer from './Footer';
 import Button from './Button';
 
 
@@ -19,12 +19,12 @@ export default function Planet(){
     let numeroDoPlaneta = 0;
     let ultimoNumero = 0;
 
-    let geraNumero = () => Math.floor(Math.random() * 61);
+    let geraNumero = () => Math.floor(Math.random() * 61 + 1);
     
     function verificaNumero(){
         let novoNumero = geraNumero();
     
-        if(novoNumero !== ultimoNumero && novoNumero !== 0){
+        if(novoNumero !== ultimoNumero){
             numeroDoPlaneta = novoNumero;
         } else {
             numeroDoPlaneta = geraNumero();
@@ -75,11 +75,11 @@ export default function Planet(){
                         < Content dado={"Population"} valor={population} />
                         < Content dado={"Climate"} valor={climate} />
                         < Content dado={"Terrain"} valor={terrain} />
-                        < Feature dado={"Feature in"} valor={filmes} />
+                        < Footer dado={"Feature in"} valor={filmes} />
                     </>
                 )}
             </div>
-            < Button onClick={handleClick} hidden={loading} />
+            < Button onClick={handleClick} valor={planet} hidden={loading} />
         </div>
     );
 }
